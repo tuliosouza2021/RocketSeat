@@ -1,0 +1,21 @@
+		Instalando Edge		
+
+1-Executar linha de comando abaixo para baixar.
+R-> curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
+sudo install -o root -g root -m 644 microsoft.gpg /etc/apt/trusted.gpg.d/
+sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/edge stable main" > /etc/apt/sources.list.d/microsoft-edge-dev.list'
+sudo rm microsoft.gpg
+
+2-Executar linha de comando abaixo para instalar.
+R-> sudo apt update
+    sudo apt install microsoft-edge-dev
+    
+    
+		Instalando visual studio code
+1-> Entrar no site e baixar o .deb
+2-> Abrir o terminal e executar: sudo apt install ./Arquivo baixado.
+
+
+		Instalando o NodeJS
+1-> Instalar curl = sudo apt install curl
+2->
